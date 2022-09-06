@@ -294,8 +294,8 @@ print(doc_final, hosp_final)
 df = pd.DataFrame({'Doctor' : doc_final[:doc], 'Hospital' : hosp_final[:doc]})   
 print(df)
 
-#Some challenges we faced while implementing this algorithm were including the capacity
-#of hospitals and when the matrix had a zero row, it entered an infinite loop.
-#A pitfall of this method is only same capacity for all hospitals can be implemented.
-
-
+"""Some challenges we faced while implementing this algorithm were including the capacity of hospitals and an infinite loop during step 3 of the Hungarian algorithm.
+There are a few pitfalls in the method and code that can be improved. They are as follows:
+1) Only same capacity for all hospitals can be implemented.
+2) When the hospital capacity is more and more doctors prefer a particular hospital,there might be cases where some hospitals are not assigned any doctors.
+3) The code of Hungarian algorithm implemented here can be further optimised for larger matrices as overflow errors are possible. """
